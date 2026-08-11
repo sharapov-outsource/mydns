@@ -144,7 +144,7 @@ The two shared packages are git dependencies rather than registry ones, so `npm
 install` needs `git` available and resolves them straight from GitHub:
 
 ```json
-"@sharapov/service-kit": "git+https://github.com/sharapov-outsource/service-kit.git#v1.4.0",
+"@sharapov/service-kit": "git+https://github.com/sharapov-outsource/service-kit.git#v1.4.1",
 "@sharapov/dns-wire":    "git+https://github.com/sharapov-outsource/dns-wire.git#v1.0.0"
 ```
 
@@ -340,7 +340,7 @@ npm run scan -- example.com --json
 `npm install` требует доступного `git` и тянет их прямо с GitHub:
 
 ```json
-"@sharapov/service-kit": "git+https://github.com/sharapov-outsource/service-kit.git#v1.4.0",
+"@sharapov/service-kit": "git+https://github.com/sharapov-outsource/service-kit.git#v1.4.1",
 "@sharapov/dns-wire":    "git+https://github.com/sharapov-outsource/dns-wire.git#v1.0.0"
 ```
 
