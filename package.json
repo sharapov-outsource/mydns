@@ -9,7 +9,7 @@
     "url": "git+https://github.com/sharapov-outsource/mydns.git"
   },
   "bugs": "https://github.com/sharapov-outsource/mydns/issues",
-  "description": "Delegation, SOA consistency, records, DNSSEC and propagation for any domain \u2014 the DNSSEC chain verified rather than taken from a resolver's AD bit",
+  "description": "Delegation, SOA consistency, records, DNSSEC and propagation for any domain — the DNSSEC chain verified rather than taken from a resolver's AD bit",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -29,7 +29,7 @@
     "@fastify/rate-limit": "^10.2.2",
     "@fastify/static": "^10.1.2",
     "@sharapov/dns-wire": "git+https://github.com/sharapov-outsource/dns-wire.git#v1.0.0",
-    "@sharapov/service-kit": "git+https://github.com/sharapov-outsource/service-kit.git#v1.0.0",
+    "@sharapov/service-kit": "git+https://github.com/sharapov-outsource/service-kit.git#v1.4.0",
     "fastify": "^5.2.1",
     "yaml": "^2.7.0"
   }
