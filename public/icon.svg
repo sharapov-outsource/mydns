@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="DNS Check">
+  <!-- A delegation: one zone above, three below. The accent marks the root. -->
+  <rect width="1024" height="1024" rx="336" fill="#14110c"/>
+  <path d="M512 356v104M512 460H288v104M512 460h224v104" fill="none" stroke="#f5efe2"
+        stroke-width="46" stroke-linecap="round"/>
+  <circle cx="512" cy="300" r="76" fill="#3a3aa6"/>
+  <circle cx="288" cy="640" r="66" fill="#f5efe2"/>
+  <circle cx="512" cy="640" r="66" fill="#f5efe2"/>
+  <circle cx="736" cy="640" r="66" fill="#f5efe2"/>
+</svg>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="%LANG%" dir="%DIR%">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <!-- Title and description come from the same dictionary the page uses, in the
+       language the request asked for, so a crawler that runs no JavaScript sees
+       what a visitor sees. -->
+  <title>%TITLE%</title>
+  <meta name="description" content="%DESCRIPTION%" id="meta-description">
+  <!-- Only the home page is worth indexing; a report page is a check result. -->
+  <meta name="robots" content="%ROBOTS%" id="meta-robots">
+  <link rel="canonical" href="%URL%" id="link-canonical">
+
+  <meta name="theme-color" content="#14110c" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f9f4ea" media="(prefers-color-scheme: light)">
+  <meta name="application-name" content="DNS Check">
+  <meta name="apple-mobile-web-app-title" content="DNS Check">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DNS Check">
+  <meta property="og:url" content="%URL%" id="og-url">
+  <meta property="og:locale" content="%LOCALE%" id="og-locale">
+  <meta property="og:title" content="%TITLE%" id="og-title">
+  <meta property="og:description" content="%DESCRIPTION%" id="og-description">
+  <meta property="og:image" content="%ORIGIN%/static/og-image.png" id="og-image">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="DNS Check">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="%TITLE%" id="twitter-title">
+  <meta name="twitter:description" content="%DESCRIPTION%" id="twitter-description">
+  <meta name="twitter:image" content="%ORIGIN%/static/og-image.png" id="twitter-image">
+
+  <link rel="stylesheet" href="/static/kit/base.css">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+  <link rel="manifest" href="/static/site.webmanifest">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "DNS Check",
+    "url": "%ORIGIN%/",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "description": "%DESCRIPTION%",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "inLanguage": ["en", "ru", "es", "zh", "hi", "ar", "pt", "fr", "de", "ja", "tr", "uk"]
+  }
+  </script>
+%ANALYTICS%
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <rect class="tile" width="1024" height="1024" rx="336"/>
+          <!-- A delegation: one root above, three zones below. -->
+          <path class="glyph" d="M512 356v104M512 460H288v104M512 460h224v104" fill="none"
+                stroke-width="46" stroke-linecap="round"/>
+          <circle class="accent" cx="512" cy="300" r="76"/>
+          <circle class="glyph" cx="288" cy="640" r="66"/>
+          <circle class="glyph" cx="512" cy="640" r="66"/>
+          <circle class="glyph" cx="736" cy="640" r="66"/>
+        </svg>
+      </span>
+      <div>
+        <div class="wordmark">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <h1 data-i18n="h1">DNS Check</h1>
+        </div>
+        <div class="sub" data-i18n="subtitle"></div>
+      </div>
+    </div>
+    <div class="tools">
+      <select id="lang" aria-label="Language"></select>
+      <button id="btn-rescan"><span class="mark" aria-hidden="true">↻</span><span data-i18n="btn_rescan"></span></button>
+      <button id="btn-copy-json"><span class="mark" aria-hidden="true">⧉</span><span data-i18n="btn_copy_json"></span></button>
+      <button id="btn-save-json"><span class="mark" aria-hidden="true">↓</span><span data-i18n="btn_save_json"></span></button>
+      <a class="ghlink" href="https://github.com/sharapov-outsource/mydns"
+         target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </header>
+
+  <form class="search" id="search-form">
+    <input id="search-host" type="text" inputmode="url" spellcheck="false" autocomplete="off"
+           placeholder="example.com" aria-label="Domain">
+    <button type="submit" class="primary" id="btn-scan"><span data-i18n="btn_scan"></span></button>
+  </form>
+
+  <section class="hero" id="hero">
+    <div class="hero-grade">
+      <div class="grade-badge pending" id="grade-badge">·</div>
+      <div class="grade-caption" data-i18n="hero_grade"></div>
+    </div>
+    <div class="hero-main">
+      <div class="hero-label" data-i18n="hero_label"></div>
+      <div class="host-line">
+        <span class="host" id="hero-host">…</span>
+      </div>
+      <div class="hero-meta" id="hero-meta"></div>
+      <div class="progress" id="progress" hidden>
+        <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+        <div class="progress-label" id="progress-label"></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="alerts"></div>
+
+  <main class="grid" id="report" hidden>
+
+    <section class="card">
+      <h2><span data-i18n="card_grade"></span></h2>
+      <div class="meter"><span class="k" data-i18n="comp_delegation"></span><span class="bar"><i id="bar-delegation"></i></span><span class="v" id="score-delegation"></span></div>
+      <div class="meter"><span class="k" data-i18n="comp_dnssec"></span><span class="bar"><i id="bar-dnssec"></i></span><span class="v" id="score-dnssec"></span></div>
+      <div class="meter"><span class="k" data-i18n="comp_hygiene"></span><span class="bar"><i id="bar-hygiene"></i></span><span class="v" id="score-hygiene"></span></div>
+      <div class="row"><span class="k" data-i18n="k_total_score"></span><span class="v skeleton" id="score-total"></span></div>
+      <div class="row"><span class="k" data-i18n="k_queries"></span><span class="v skeleton" id="meta-queries"></span></div>
+      <div class="row"><span class="k" data-i18n="k_elapsed"></span><span class="v skeleton" id="meta-elapsed"></span></div>
+      <div class="tags" id="grade-caps"></div>
+      <div class="tags" id="grade-warnings"></div>
+    </section>
+
+    <section class="card">
+      <h2><span data-i18n="card_delegation"></span></h2>
+      <div class="row"><span class="k" data-i18n="k_zone"></span><span class="v skeleton big" id="d-zone"></span></div>
+      <div class="row"><span class="k" data-i18n="k_ns_agreement"></span><span class="v skeleton" id="d-agreement"></span></div>
+      <div class="row"><span class="k" data-i18n="k_only_at_parent"></span><span class="v skeleton" id="d-only-parent"></span></div>
+      <div class="row"><span class="k" data-i18n="k_only_at_zone"></span><span class="v skeleton" id="d-only-zone"></span></div>
+      <div class="row"><span class="k" data-i18n="k_answering"></span><span class="v skeleton" id="d-answering"></span></div>
+      <div class="row"><span class="k" data-i18n="k_ipv6_ns"></span><span class="v skeleton" id="d-ipv6"></span></div>
+      <div class="row"><span class="k" data-i18n="k_glue"></span><span class="v skeleton" id="d-glue"></span></div>
+      <div class="note" data-i18n="note_delegation"></div>
+    </section>
+
+    <section class="card">
+      <h2><span data-i18n="card_soa"></span></h2>
+      <div class="row"><span class="k" data-i18n="k_serial"></span><span class="v skeleton big" id="s-serial"></span></div>
+      <div class="row"><span class="k" data-i18n="k_serials_agree"></span><span class="v skeleton" id="s-agree"></span></div>
+      <div class="row"><span class="k" data-i18n="k_primary"></span><span class="v skeleton" id="s-primary"></span></div>
+      <div class="row"><span class="k" data-i18n="k_rname"></span><span class="v skeleton" id="s-rname"></span></div>
+      <div class="row"><span class="k" data-i18n="k_refresh"></span><span class="v skeleton" id="s-refresh"></span></div>
+      <div class="row"><span class="k" data-i18n="k_retry"></span><span class="v skeleton" id="s-retry"></span></div>
+      <div class="row"><span class="k" data-i18n="k_expire"></span><span class="v skeleton" id="s-expire"></span></div>
+      <div class="row"><span class="k" data-i18n="k_minimum"></span><span class="v skeleton" id="s-minimum"></span></div>
+      <div class="note" data-i18n="note_soa"></div>
+    </section>
+
+    <section class="card">
+      <h2><span data-i18n="card_dnssec"></span></h2>
+      <div class="row"><span class="k" data-i18n="k_enabled"></span><span class="v skeleton big" id="k-enabled"></span></div>
+      <div class="row"><span class="k" data-i18n="k_ds_at_parent"></span><span class="v skeleton" id="k-ds"></span></div>
+      <div class="row"><span class="k" data-i18n="k_chain_ds"></span><span class="v skeleton" id="k-chain-ds"></span></div>
+      <div class="row"><span class="k" data-i18n="k_chain_key"></span><span class="v skeleton" id="k-chain-key"></span></div>
+      <div class="row"><span class="k" data-i18n="k_chain_zone"></span><span class="v skeleton" id="k-chain-zone"></span></div>
+      <div class="row"><span class="k" data-i18n="k_nsec_kind"></span><span class="v skeleton" id="k-nsec"></span></div>
+      <div class="row"><span class="k" data-i18n="k_nsec3_iterations"></span><span class="v skeleton" id="k-nsec3-iter"></span></div>
+      <div class="row"><span class="k" data-i18n="k_soonest_expiry"></span><span class="v skeleton" id="k-expiry"></span></div>
+      <div class="note" data-i18n="note_dnssec"></div>
+    </section>
+
+    <section class="card">
+      <h2><span data-i18n="card_records"></span></h2>
+      <div class="row"><span class="k" data-i18n="k_a"></span><span class="v skeleton" id="r-a"></span></div>
+      <div class="row"><span class="k" data-i18n="k_aaaa"></span><span class="v skeleton" id="r-aaaa"></span></div>
+      <div class="row"><span class="k" data-i18n="k_mx"></span><span class="v skeleton" id="r-mx"></span></div>
+      <div class="row"><span class="k" data-i18n="k_ns"></span><span class="v skeleton" id="r-ns"></span></div>
+      <div class="row"><span class="k" data-i18n="k_apex_ttl"></span><span class="v skeleton" id="r-ttl"></span></div>
+      <div class="row"><span class="k" data-i18n="k_wildcard"></span><span class="v skeleton" id="r-wildcard"></span></div>
+      <div class="sub-head" data-i18n="k_txt"></div>
+      <div id="r-txt" class="kvlist"></div>
+    </section>
+
+    <section class="card">
+      <h2><span data-i18n="card_caa"></span></h2>
+      <div class="row"><span class="k" data-i18n="k_caa_at"></span><span class="v skeleton" id="c-at"></span></div>
+      <div class="row"><span class="k" data-i18n="k_caa_issue"></span><span class="v skeleton" id="c-issue"></span></div>
+      <div class="row"><span class="k" data-i18n="k_caa_issuewild"></span><span class="v skeleton" id="c-issuewild"></span></div>
+      <div class="row"><span class="k" data-i18n="k_caa_iodef"></span><span class="v skeleton" id="c-iodef"></span></div>
+    </section>
+
+    <section class="card wide">
+      <h2><span data-i18n="card_nameservers"></span></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr>
+            <th data-i18n="th_nameserver"></th>
+            <th data-i18n="th_status"></th>
+            <th data-i18n="th_addresses"></th>
+            <th data-i18n="th_serial"></th>
+            <th data-i18n="th_response"></th>
+          </tr></thead>
+          <tbody id="ns-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card wide">
+      <h2><span data-i18n="card_keys"></span></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr>
+            <th data-i18n="th_keytag"></th>
+            <th data-i18n="th_role"></th>
+            <th data-i18n="th_algorithm"></th>
+            <th data-i18n="th_bits"></th>
+          </tr></thead>
+          <tbody id="key-body"></tbody>
+        </table>
+      </div>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr>
+            <th data-i18n="th_covers"></th>
+            <th data-i18n="th_keytag"></th>
+            <th data-i18n="th_valid"></th>
+            <th data-i18n="th_expires"></th>
+          </tr></thead>
+          <tbody id="sig-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card wide">
+      <h2><span data-i18n="card_propagation"></span></h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr>
+            <th data-i18n="th_resolver"></th>
+            <th data-i18n="th_answer"></th>
+            <th data-i18n="th_ttl"></th>
+            <th data-i18n="th_response"></th>
+          </tr></thead>
+          <tbody id="prop-body"></tbody>
+        </table>
+      </div>
+      <div class="note" data-i18n="note_propagation"></div>
+    </section>
+
+    <section class="card wide">
+      <h2><span data-i18n="card_trace"></span></h2>
+      <ol class="trace" id="trace-list"></ol>
+      <div class="note" data-i18n="note_trace"></div>
+    </section>
+
+    <section class="card wide">
+      <h2><span data-i18n="card_flags"></span></h2>
+      <div id="flag-list" class="findings"></div>
+      <div class="note" data-i18n="note_flags"></div>
+    </section>
+
+    <section class="card wide">
+      <h2><span data-i18n="card_raw"></span></h2>
+      <pre class="raw" id="raw-json">…</pre>
+    </section>
+
+  </main>
+
+  <section class="empty" id="empty">
+    <p data-i18n="empty_hint"></p>
+    <div class="examples-label" data-i18n="empty_examples"></div>
+    <div class="examples" id="examples"></div>
+  </section>
+
+  <footer>
+    %SERVICES%
+    <p id="api-hint"></p>
+    <p><span data-i18n="footer1"></span><br><span data-i18n="footer2"></span><br><span data-i18n="footer3"></span></p>
+    <a class="footer-credit" href="https://sharapov.biz"
+       target="_blank" rel="noopener noreferrer" aria-label="Sharapov">
+      <img src="/static/kit/sharapov.svg" alt="Sharapov" width="72" height="16">
+    </a>
+  </footer>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="/static/kit/i18n-common.js"></script>
+<script src="/static/i18n.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

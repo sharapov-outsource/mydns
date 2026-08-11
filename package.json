@@ -1,0 +1,36 @@
+{
+  "name": "mydns",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://mydns.sharapov.biz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharapov-outsource/mydns.git"
+  },
+  "bugs": "https://github.com/sharapov-outsource/mydns/issues",
+  "description": "Delegation, SOA consistency, records, DNSSEC and propagation for any domain \u2014 the DNSSEC chain verified rather than taken from a resolver's AD bit",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "scan": "node scripts/scan-cli.js",
+    "icons": "node scripts/make-icons.js",
+    "check:i18n": "node scripts/check-i18n.js",
+    "check:syntax": "node --check public/app.js && node --check public/i18n.js && node --check server/index.js && node --check server/scan.js && node --check server/session.js && node --check server/delegation.js && node --check server/soa.js && node --check server/records.js && node --check server/dnssec.js && node --check server/caa.js && node --check server/propagation.js && node --check server/grade.js",
+    "test:unit": "node --test \"test/*.test.js\"",
+    "smoke": "node scripts/smoke.js",
+    "test": "npm run check:syntax && npm run check:i18n && npm run test:unit && npm run smoke"
+  },
+  "dependencies": {
+    "@fastify/rate-limit": "^10.2.2",
+    "@fastify/static": "^10.1.2",
+    "@sharapov/dns-wire": "git+https://github.com/sharapov-outsource/dns-wire.git#v1.0.0",
+    "@sharapov/service-kit": "git+https://github.com/sharapov-outsource/service-kit.git#v1.0.0",
+    "fastify": "^5.2.1",
+    "yaml": "^2.7.0"
+  }
+}

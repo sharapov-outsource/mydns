@@ -1,0 +1,33 @@
+/* ==========================================================================
+   mydns — the few things the shared stylesheet does not already draw.
+   Everything else (tokens, type, cards, tables, findings) comes from
+   /static/kit/base.css.
+   ========================================================================== */
+
+/* The path from the root: a numbered list where each step is one referral. */
+.trace { list-style: none; margin: 12px 0 6px; padding: 0; counter-reset: step }
+.trace li {
+  position: relative; padding: 10px 0 10px 26px; font-size: 12.5px;
+  border-inline-start: 1px solid var(--line-strong); margin-inline-start: 7px;
+}
+.trace li::before {
+  counter-increment: step; content: counter(step);
+  position: absolute; inset-inline-start: -11px; top: 11px;
+  width: 21px; height: 21px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--card); border: 1px solid var(--line-strong);
+  color: var(--ink-faint); font-family: var(--font-mono); font-size: 10.5px;
+}
+.trace .label {
+  font-family: var(--font-mono-i18n); color: var(--ink);
+  word-break: break-word; direction: ltr; unicode-bidi: plaintext;
+}
+/* The arrow is a direction of travel, not text: it must not mirror in RTL. */
+.trace .label .arrow { color: var(--ink-faint); display: inline-block; direction: ltr }
+.trace .meta {
+  color: var(--ink-faint); margin-top: 3px; font-family: var(--font-mono);
+  word-break: break-word; direction: ltr; unicode-bidi: plaintext;
+}
+
+/* The TXT list holds whole records, so it reads better full width. */
+#r-txt .kv .val { text-align: start; max-width: 100% }
