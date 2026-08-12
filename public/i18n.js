@@ -1213,7 +1213,7 @@ OWN.pt = {
   fd_ttl_very_long: 'Mais de dois dias. Qualquer mudança de endereço levará esse tempo para chegar a todos, o que é uma posição ruim durante um incidente.',
 
   flag_wildcard_record: 'A zona tem um curinga',
-  fd_wildcard_record: 'Um nome que certamente não existe mesmo assim obteve resposta, então há um curinga em jogo. Vale saber, porque significa que «o registro existe» pode querer dizer apenas «o curinga casou».',
+  fd_wildcard_record: 'Um nome que certamente não existe mesmo assim obteve resposta, então há um curinga em jogo. Vale saber, porque significa que “o registro existe” pode querer dizer apenas “o curinga casou”.',
 
   flag_txt_split_into_chunks: 'Um registro TXT está partido em várias cadeias',
   fd_txt_split_into_chunks: 'Normal em qualquer coisa acima de 255 bytes — os pedaços se concatenam sem nada entre eles. Está listado porque analisadores que os juntam com um espaço corrompem em silêncio registros SPF e DKIM.',
@@ -1859,7 +1859,7 @@ OWN.de = {
   fd_ttl_very_long: 'Über zwei Tage. Jede Adressänderung braucht ebenso lange, um alle zu erreichen — eine unangenehme Lage während eines Störfalls.',
 
   flag_wildcard_record: 'Die Zone hat einen Platzhalter',
-  fd_wildcard_record: 'Ein Name, den es mit Sicherheit nicht gibt, bekam dennoch eine Antwort: Ein Platzhalter ist im Spiel. Gut zu wissen, denn „der Eintrag existiert" kann dann bloß „der Platzhalter hat gegriffen" heißen.',
+  fd_wildcard_record: 'Ein Name, den es mit Sicherheit nicht gibt, bekam dennoch eine Antwort: Ein Platzhalter ist im Spiel. Gut zu wissen, denn „der Eintrag existiert“ kann dann bloß „der Platzhalter hat gegriffen“ heißen.',
 
   flag_txt_split_into_chunks: 'Ein TXT-Eintrag ist in mehrere Zeichenketten geteilt',
   fd_txt_split_into_chunks: 'Bei allem über 255 Byte normal — die Teile werden ohne Trennzeichen aneinandergehängt. Es wird genannt, weil Parser, die sie mit einem Leerzeichen verbinden, SPF- und DKIM-Einträge stillschweigend zerstören.',
@@ -2505,7 +2505,7 @@ OWN.tr = {
   fd_ttl_very_long: 'İki günden fazla. Herhangi bir adres değişikliğinin herkese ulaşması o kadar sürer; bu da bir olay anında kötü bir konumdur.',
 
   flag_wildcard_record: 'Bölgede joker var',
-  fd_wildcard_record: 'Kesinlikle var olmayan bir ad yine de yanıt aldı, demek ki devrede bir joker var. Bilmekte fayda var, çünkü «kayıt var» yalnızca «joker eşleşti» anlamına gelebilir.',
+  fd_wildcard_record: 'Kesinlikle var olmayan bir ad yine de yanıt aldı, demek ki devrede bir joker var. Bilmekte fayda var, çünkü “kayıt var” yalnızca “joker eşleşti” anlamına gelebilir.',
 
   flag_txt_split_into_chunks: 'Bir TXT kaydı birden çok dizeye bölünmüş',
   fd_txt_split_into_chunks: '255 baytı aşan her şey için normal — parçalar aralarına hiçbir şey konmadan birleştirilir. Burada anılıyor, çünkü onları boşlukla birleştiren ayrıştırıcılar SPF ve DKIM kayıtlarını sessizce bozar.',
@@ -2715,7 +2715,7 @@ OWN.zh = {
   note_delegation: '父区和区域自身各自发布一套 NS。没有任何机制强制两者一致，一旦分歧，域名会照常工作，直到某个解析器恰好缓存了另一套为止。',
   note_soa: '每台权威服务器都单独询问。序列号落后的服务器仍在照常作答 —— 只是拿的是旧版本的区域数据。',
   note_dnssec: '链条在这里验证：父区 DS 中的摘要由区域密钥重新计算，每条签名都用密钥材料逐一核验。不会去问某个解析器它是否满意。',
-  note_propagation: '并不存在一个可供「传播」的全局 DNS 状态 —— 只有一个个缓存，各自保留被告知的内容直到自己的 TTL 走完。剩余 TTL 就是每个缓存还会继续这样回答多久。',
+  note_propagation: '并不存在一个可供“传播”的全局 DNS 状态 —— 只有一个个缓存，各自保留被告知的内容直到自己的 TTL 走完。剩余 TTL 就是每个缓存还会继续这样回答多久。',
   note_trace: '每一步都是一次转介：左边的服务器被问及该域名，它以右边的服务器作答。',
 
   err_zone_not_found: '未找到该名称对应的区域。',
@@ -2828,7 +2828,7 @@ OWN.zh = {
   fd_ttl_very_long: '超过两天。任何地址变更都要花同样长的时间才能传到所有人那里，事故当中这是很被动的处境。',
 
   flag_wildcard_record: '该区域设有通配符',
-  fd_wildcard_record: '一个必然不存在的名称居然也得到了应答，说明通配符在起作用。这值得知道，因为它意味着「记录存在」可能只是「通配符匹配上了」。',
+  fd_wildcard_record: '一个必然不存在的名称居然也得到了应答，说明通配符在起作用。这值得知道，因为它意味着“记录存在”可能只是“通配符匹配上了”。',
 
   flag_txt_split_into_chunks: '某条 TXT 记录被拆成了多个字符串',
   fd_txt_split_into_chunks: '超过 255 字节的内容都是如此 —— 各段之间不加任何分隔直接拼接。这里之所以列出，是因为用空格把它们连起来的解析器会悄悄毁掉 SPF 和 DKIM 记录。',
@@ -3265,7 +3265,7 @@ OWN.hi = {
   stage_resolve: 'प्रत्यायोजन का पीछा',
   stage_delegation: 'नेमसर्वरों की जाँच',
   stage_soa: 'SOA क्रमांकों की तुलना',
-  stage_records: 'अभिलेख पढ़े जा रहे हैं',
+  stage_records: 'रिकॉर्ड पढ़े जा रहे हैं',
   stage_dnssec: 'DNSSEC शृंखला का सत्यापन',
   stage_caa: 'CAA की खोज',
   stage_propagation: 'सार्वजनिक रिज़ॉल्वरों से पूछताछ',
@@ -3275,7 +3275,7 @@ OWN.hi = {
   card_delegation: 'प्रत्यायोजन',
   card_nameservers: 'नेमसर्वर',
   card_soa: 'ज़ोन (SOA)',
-  card_records: 'अभिलेख',
+  card_records: 'रिकॉर्ड',
   card_dnssec: 'DNSSEC',
   card_keys: 'कुंजियाँ और हस्ताक्षर',
   card_caa: 'CAA',
@@ -3292,7 +3292,7 @@ OWN.hi = {
   k_ns_agreement: 'दोनों पक्ष मेल खाते हैं',
   k_only_at_parent: 'केवल जनक में',
   k_only_at_zone: 'केवल ज़ोन में',
-  k_glue: 'ग्लू अभिलेख',
+  k_glue: 'ग्लू रिकॉर्ड',
   k_answering: 'आधिकारिक रूप से उत्तर देते हैं',
   k_ipv6_ns: 'IPv6 से पहुँच योग्य',
   k_primary: 'प्राथमिक (MNAME)',
@@ -3372,7 +3372,7 @@ OWN.hi = {
   inc_zone_not_found: 'नाम प्रत्यायोजित नहीं है, इसलिए जाँचने को कुछ था ही नहीं',
   inc_delegation_walk_incomplete: 'जड़ से शुरू हुई यात्रा पूरी नहीं हुई',
   inc_no_authoritative_server_answered: 'किसी आधिकारिक नेमसर्वर ने उत्तर नहीं दिया',
-  inc_ds_lookup_failed: 'जनक का DS अभिलेख पढ़ा नहीं जा सका',
+  inc_ds_lookup_failed: 'जनक का DS रिकॉर्ड पढ़ा नहीं जा सका',
   inc_dnskey_lookup_failed: 'DNSKEY समूह पढ़ा नहीं जा सका',
   inc_dnskey_rrsig_missing: 'DNSKEY समूह पर कोई हस्ताक्षर नहीं लौटा',
   inc_soa_rrsig_unavailable: 'ज़ोन के डेटा पर कोई हस्ताक्षर नहीं लौटा',
@@ -3389,7 +3389,7 @@ OWN.hi = {
   cap_serial_mismatch: 'सर्वरों के पास ज़ोन के भिन्न संस्करण हैं',
   cap_missing_glue: 'ज़ोन के भीतर के सर्वर का ग्लू नहीं है',
   cap_single_nameserver: 'केवल एक नेमसर्वर',
-  cap_cname_with_other_data: 'अन्य अभिलेखों के साथ CNAME',
+  cap_cname_with_other_data: 'अन्य रिकॉर्ड के साथ CNAME',
   cap_signed_but_no_ds: 'हस्ताक्षरित, पर जनक में DS नहीं',
   cap_weak_dnssec_algorithm: 'हस्ताक्षर एल्गोरिद्म अब भरोसेमंद नहीं',
   cap_weak_dnssec_key: 'बहुत छोटी हस्ताक्षर कुंजी',
@@ -3402,16 +3402,16 @@ OWN.hi = {
   fd_nxdomain: 'जनक ज़ोन ने NXDOMAIN लौटाया: इस नाम के लिए कोई प्रत्यायोजन नहीं है। या तो यह कभी पंजीकृत ही नहीं हुआ, या पंजीकरण समाप्त हो चुका है।',
 
   flag_no_delegation: 'नाम प्रत्यायोजित नहीं है',
-  fd_no_delegation: 'इस नाम के लिए कोई ज़ोन नहीं मिला। यह किसी जनक ज़ोन के भीतर एक अभिलेख के रूप में हो सकता है, पर अपने नेमसर्वरों वाला स्वतंत्र ज़ोन नहीं है।',
+  fd_no_delegation: 'इस नाम के लिए कोई ज़ोन नहीं मिला। यह किसी जनक ज़ोन के भीतर एक रिकॉर्ड के रूप में हो सकता है, पर अपने नेमसर्वरों वाला स्वतंत्र ज़ोन नहीं है।',
 
   flag_referral_off_path: 'एक अग्रेषण नाम से हटकर ले गया',
   fd_referral_off_path: 'एक सर्वर ने हमें ऐसे ज़ोन की ओर भेजा जो पूछे गए नाम का पूर्वज नहीं है। यह विन्यास की गलती है, और ऐसे अग्रेषण के पीछे जाना कहीं और पहुँच जाने का तरीका है।',
 
   flag_nameserver_unresolvable: 'एक नेमसर्वर का नाम हल नहीं होता',
-  fd_nameserver_unresolvable: 'प्रत्यायोजन में ऐसा सर्वर दर्ज है जिसके अपने नाम के पते वाले अभिलेख नहीं हैं। जो रिज़ॉल्वर उसे चुनता है वह एक प्रश्न व्यर्थ करता है और फिर दूसरा आज़माने को बाध्य होता है।',
+  fd_nameserver_unresolvable: 'प्रत्यायोजन में ऐसा सर्वर दर्ज है जिसके अपने नाम के पते वाले रिकॉर्ड नहीं हैं। जो रिज़ॉल्वर उसे चुनता है वह एक प्रश्न व्यर्थ करता है और फिर दूसरा आज़माने को बाध्य होता है।',
 
   flag_ns_set_mismatch: 'जनक और ज़ोन अलग-अलग नेमसर्वर बताते हैं',
-  fd_ns_set_mismatch: 'जनक का प्रत्यायोजन और ज़ोन के NS अभिलेख मेल नहीं खाते। व्यवहार में दोनों समूह काम में आते हैं, इसलिए डोमेन इस बात पर अलग-अलग बर्ताव करता है कि रिज़ॉल्वर ने कौन-सा कैश किया — रुक-रुक कर आने वाली खराबी का यही चिरपरिचित कारण है।',
+  fd_ns_set_mismatch: 'जनक का प्रत्यायोजन और ज़ोन के NS रिकॉर्ड मेल नहीं खाते। व्यवहार में दोनों समूह काम में आते हैं, इसलिए डोमेन इस बात पर अलग-अलग बर्ताव करता है कि रिज़ॉल्वर ने कौन-सा कैश किया — रुक-रुक कर आने वाली खराबी का यही चिरपरिचित कारण है।',
 
   flag_single_nameserver: 'केवल एक नेमसर्वर',
   fd_single_nameserver: 'RFC 1034 अलग-अलग नेटवर्क में कम से कम दो माँगता है। एक ही होने पर उस मशीन की कोई भी बंदी पूरे डोमेन की बंदी है, ईमेल सहित।',
@@ -3423,9 +3423,9 @@ OWN.hi = {
   fd_lame_delegation: 'सर्वर उत्तर देता है, पर आधिकारिकता के चिह्न के बिना: इस ज़ोन के लिए उसे विन्यस्त ही नहीं किया गया। यही अनाधिकारिक प्रत्यायोजन है, और जो रिज़ॉल्वर उस सर्वर पर पहुँचता है उसे कहीं और से नए सिरे से शुरू करना पड़ता है।',
 
   flag_ns_points_at_cname: 'एक नेमसर्वर का नाम उपनाम है',
-  fd_ns_points_at_cname: 'RFC 2181 §10.3 माँगता है कि NS अभिलेख पते वाले होस्ट का नाम ले, CNAME का नहीं। कुछ रिज़ॉल्वर निभा ले जाते हैं; कुछ सीधे विफल हो जाते हैं।',
+  fd_ns_points_at_cname: 'RFC 2181 §10.3 माँगता है कि NS रिकॉर्ड पते वाले होस्ट का नाम ले, CNAME का नहीं। कुछ रिज़ॉल्वर निभा ले जाते हैं; कुछ सीधे विफल हो जाते हैं।',
 
-  flag_missing_glue: 'ज़ोन के भीतर के सर्वर का ग्लू अभिलेख नहीं है',
+  flag_missing_glue: 'ज़ोन के भीतर के सर्वर का ग्लू रिकॉर्ड नहीं है',
   fd_missing_glue: 'नेमसर्वर उसी ज़ोन के भीतर है जिसकी वह सेवा करता है, इसलिए उसका पता हल करने के लिए ज़ोन से पूछना पड़ेगा — और उसके लिए वही पता चाहिए। इस घेरे को तोड़ने के लिए जनक को ग्लू प्रकाशित करना होगा।',
 
   flag_no_authoritative_nameserver: 'इस ज़ोन के लिए कोई उत्तर नहीं देता',
@@ -3438,7 +3438,7 @@ OWN.hi = {
   fd_nameservers_single_network: 'पते एक ही /24 में हैं, जिसका अर्थ प्रायः एक ही डेटा सेंटर और अक्सर एक ही रैक होता है। एक ही जगह के दो सर्वर साथ ही गिरते हैं।',
 
   flag_serial_mismatch: 'सर्वरों के पास ज़ोन के भिन्न संस्करण हैं',
-  fd_serial_mismatch: 'SOA क्रमांक अलग-अलग हैं, यानी कम से कम एक द्वितीयक सर्वर ने प्राथमिक का अनुसरण करना छोड़ दिया है: विफल स्थानांतरण, समाप्त कुंजी, कोई नया फ़ायरवॉल नियम। वह पुराने अभिलेखों के साथ उत्तर देता रहता है, और कहीं कोई त्रुटि दिखाई नहीं देती।',
+  fd_serial_mismatch: 'SOA क्रमांक अलग-अलग हैं, यानी कम से कम एक द्वितीयक सर्वर ने प्राथमिक का अनुसरण करना छोड़ दिया है: विफल स्थानांतरण, समाप्त कुंजी, कोई नया फ़ायरवॉल नियम। वह पुराने रिकॉर्ड के साथ उत्तर देता रहता है, और कहीं कोई त्रुटि दिखाई नहीं देती।',
 
   flag_soa_timer_out_of_range: 'कोई SOA टाइमर सामान्य दायरे से बाहर है',
   fd_soa_timer_out_of_range: 'मान RFC 1912 की सिफ़ारिश से बाहर है। अपने आप में यह खराबी नहीं — पर ऐसे अंक प्रायः किसी ऐसे साँचे से विरासत में मिलते हैं जिस पर कोई लौटकर नहीं आया।',
@@ -3456,15 +3456,15 @@ OWN.hi = {
   fd_primary_not_in_ns_set: 'SOA ऐसे प्राथमिक का नाम लेता है जो NS समूह में नहीं है। छिपा हुआ प्राथमिक ठीक ऐसे ही चलाया जाता है, इसलिए यह खराबी नहीं, टिप्पणी है।',
 
   flag_cname_at_apex: 'ज़ोन के शीर्ष पर CNAME',
-  fd_cname_at_apex: 'RFC 1034 §3.6.2: जिस नाम पर CNAME है उस पर और कोई अभिलेख नहीं होता। शीर्ष पर SOA और NS हमेशा रहते हैं, इसलिए दोनों बातें एक साथ सच नहीं हो सकतीं। कुछ रिज़ॉल्वर CNAME लौटाकर बाकी छोड़ देते हैं, कुछ उसे अनदेखा करते हैं; सबसे पहले प्रायः ईमेल टूटता है।',
+  fd_cname_at_apex: 'RFC 1034 §3.6.2: जिस नाम पर CNAME है उस पर और कोई रिकॉर्ड नहीं होता। शीर्ष पर SOA और NS हमेशा रहते हैं, इसलिए दोनों बातें एक साथ सच नहीं हो सकतीं। कुछ रिज़ॉल्वर CNAME लौटाकर बाकी छोड़ देते हैं, कुछ उसे अनदेखा करते हैं; सबसे पहले प्रायः ईमेल टूटता है।',
 
-  flag_cname_with_other_data: 'अन्य अभिलेखों के साथ CNAME',
-  fd_cname_with_other_data: 'एक ही नाम पर CNAME भी है और कम से कम एक और प्रकार का अभिलेख भी। रिज़ॉल्वर कौन-सा लौटाएगा यह इस पर निर्भर करता है कि पहले क्या पूछा गया — और यह वह गुण नहीं जो आप अपने DNS में चाहेंगे।',
+  flag_cname_with_other_data: 'अन्य रिकॉर्ड के साथ CNAME',
+  fd_cname_with_other_data: 'एक ही नाम पर CNAME भी है और कम से कम एक और प्रकार का रिकॉर्ड भी। रिज़ॉल्वर कौन-सा लौटाएगा यह इस पर निर्भर करता है कि पहले क्या पूछा गया — और यह वह गुण नहीं जो आप अपने DNS में चाहेंगे।',
 
   flag_no_address_at_apex: 'शीर्ष का कोई पता नहीं',
   fd_no_address_at_apex: 'डोमेन के लिए न A है न AAAA। केवल ईमेल के लिए इस्तेमाल होने वाले डोमेन में यह जानबूझकर है; ब्राउज़र में इसे टाइप करने वाले के लिए अप्रत्याशित।',
 
-  flag_no_ipv6: 'कोई AAAA अभिलेख नहीं',
+  flag_no_ipv6: 'कोई AAAA रिकॉर्ड नहीं',
   fd_no_ipv6: 'डोमेन केवल IPv4 पर हल होता है। केवल-IPv6 मोबाइल नेटवर्क के आगंतुक अपने ऑपरेटर के अनुवादक के रास्ते पहुँचते हैं।',
 
   flag_ttl_very_short: 'शीर्ष पर बहुत छोटा TTL',
@@ -3474,13 +3474,13 @@ OWN.hi = {
   fd_ttl_very_long: 'दो दिन से अधिक। पते का कोई भी बदलाव सब तक पहुँचने में उतना ही समय लेगा, जो किसी घटना के दौरान बहुत असुविधाजनक स्थिति है।',
 
   flag_wildcard_record: 'ज़ोन में वाइल्डकार्ड है',
-  fd_wildcard_record: 'जो नाम निश्चित रूप से मौजूद नहीं है उसे भी उत्तर मिला, यानी वाइल्डकार्ड काम कर रहा है। यह जानना उपयोगी है, क्योंकि तब «अभिलेख है» का अर्थ केवल «वाइल्डकार्ड मिल गया» हो सकता है।',
+  fd_wildcard_record: 'जो नाम निश्चित रूप से मौजूद नहीं है उसे भी उत्तर मिला, यानी वाइल्डकार्ड काम कर रहा है। यह जानना उपयोगी है, क्योंकि तब “रिकॉर्ड है” का अर्थ केवल “वाइल्डकार्ड मिल गया” हो सकता है।',
 
-  flag_txt_split_into_chunks: 'एक TXT अभिलेख कई हिस्सों में बँटा है',
-  fd_txt_split_into_chunks: '255 बाइट से बड़ी हर चीज़ के लिए सामान्य — टुकड़े बीच में कुछ डाले बिना जोड़े जाते हैं। यहाँ इसलिए दर्ज है क्योंकि उन्हें खाली स्थान से जोड़ने वाले विश्लेषक SPF और DKIM अभिलेखों को चुपचाप बिगाड़ देते हैं।',
+  flag_txt_split_into_chunks: 'एक TXT रिकॉर्ड कई हिस्सों में बँटा है',
+  fd_txt_split_into_chunks: '255 बाइट से बड़ी हर चीज़ के लिए सामान्य — टुकड़े बीच में कुछ डाले बिना जोड़े जाते हैं। यहाँ इसलिए दर्ज है क्योंकि उन्हें खाली स्थान से जोड़ने वाले पार्सर SPF और DKIM रिकॉर्ड को चुपचाप बिगाड़ देते हैं।',
 
   flag_ds_without_dnskey: 'जनक कहता है ज़ोन हस्ताक्षरित है, पर वह नहीं है',
-  fd_ds_without_dnskey: 'जनक में DS अभिलेख है पर ज़ोन में DNSKEY नहीं। सत्यापन करने वाला हर रिज़ॉल्वर इसे हमला मानकर उत्तर देने से मना कर देता है, इसलिए इंटरनेट के बड़े हिस्से के लिए यह डोमेन पहुँच से बाहर है।',
+  fd_ds_without_dnskey: 'जनक में DS रिकॉर्ड है पर ज़ोन में DNSKEY नहीं। सत्यापन करने वाला हर रिज़ॉल्वर इसे हमला मानकर उत्तर देने से मना कर देता है, इसलिए इंटरनेट के बड़े हिस्से के लिए यह डोमेन पहुँच से बाहर है।',
 
   flag_dnssec_not_enabled: 'ज़ोन हस्ताक्षरित नहीं है',
   fd_dnssec_not_enabled: 'DNSSEC नहीं है। इस डोमेन के उत्तरों को गढ़े हुए उत्तरों से अलग नहीं किया जा सकता — DNSSEC इसी को रोकने के लिए है।',
@@ -3519,10 +3519,10 @@ OWN.hi = {
   fd_signed_but_no_ds: 'ज़ोन हस्ताक्षरित है और जनक कोई DS प्रकाशित नहीं करता, इसलिए जड़ से इन हस्ताक्षरों तक कोई रास्ता नहीं — इन्हें सत्यापित करने वाला कुछ नहीं है। प्रायः यह रजिस्ट्रार वाला वह कदम है जो कभी पूरा ही नहीं हुआ।',
 
   flag_zone_data_signature_invalid: 'ज़ोन के डेटा का हस्ताक्षर सत्यापित नहीं होता',
-  fd_zone_data_signature_invalid: 'SOA अभिलेख हस्ताक्षरित है और हस्ताक्षर प्रकाशित कुंजियों से मेल नहीं खाता। सत्यापन करने वाले रिज़ॉल्वर इस डोमेन को अस्वीकार कर देंगे।',
+  fd_zone_data_signature_invalid: 'SOA रिकॉर्ड हस्ताक्षरित है और हस्ताक्षर प्रकाशित कुंजियों से मेल नहीं खाता। सत्यापन करने वाले रिज़ॉल्वर इस डोमेन को अस्वीकार कर देंगे।',
 
   flag_zone_data_not_signed: 'ज़ोन के डेटा पर हस्ताक्षर नहीं हैं',
-  fd_zone_data_not_signed: 'कुंजियाँ प्रकाशित हैं पर अभिलेख स्वयं हस्ताक्षरित नहीं, यानी ज़ोन केवल नाम का हस्ताक्षरित है।',
+  fd_zone_data_not_signed: 'कुंजियाँ प्रकाशित हैं पर रिकॉर्ड स्वयं हस्ताक्षरित नहीं, यानी ज़ोन केवल नाम का हस्ताक्षरित है।',
 
   flag_signatures_expiring_soon: 'हस्ताक्षर अपने जीवन के अंत के निकट हैं',
   fd_signatures_expiring_soon: 'वैधता की खिड़की में बहुत कम बचा है। यदि ज़ोन को दोबारा हस्ताक्षरित करने वाली व्यवस्था रुक गई है, तो खिड़की बंद होते ही यह डोमेन सत्यापन करने वाले हर रिज़ॉल्वर के लिए गायब हो जाएगा — और बिना किसी चेतावनी के।',
@@ -3540,7 +3540,7 @@ OWN.hi = {
   fd_nsec3_iterations_above_zero: 'RFC 9276 शून्य माँगता है। अतिरिक्त चक्रों का उद्देश्य ज़ोन की गणना महँगी करना था; वह कभी हुआ नहीं, और भरोसे से जो धीमा पड़ता है वह केवल सत्यापन करने वाला रिज़ॉल्वर है।',
 
   flag_nsec3_salt_present: 'NSEC3 नमक का उपयोग करता है',
-  fd_nsec3_salt_present: 'RFC 9276 खाली नमक माँगता है। यह कोई सुरक्षा नहीं जोड़ता — नमक स्वयं अभिलेख में प्रकाशित होता है — और उसे बदलने का अर्थ पूरे ज़ोन को दोबारा हस्ताक्षरित करना है।',
+  fd_nsec3_salt_present: 'RFC 9276 खाली नमक माँगता है। यह कोई सुरक्षा नहीं जोड़ता — नमक स्वयं रिकॉर्ड में प्रकाशित होता है — और उसे बदलने का अर्थ पूरे ज़ोन को दोबारा हस्ताक्षरित करना है।',
 
   flag_nsec3_opt_out: 'NSEC3 में opt-out चालू है',
   fd_nsec3_opt_out: 'ज़ोन के भीतर अहस्ताक्षरित प्रत्यायोजनों की अनुपस्थिति सिद्ध नहीं होती। बहुत बड़े ज़ोन के लिए उचित, अधिकांश के लिए अनावश्यक।',
@@ -3548,20 +3548,20 @@ OWN.hi = {
   flag_nsec_zone_walkable: 'ज़ोन की पूरी गणना की जा सकती है',
   fd_nsec_zone_walkable: 'NSEC किसी नाम की अनुपस्थिति अगले मौजूद नाम को बताकर सिद्ध करता है, इसलिए पूरा ज़ोन एक-एक प्रश्न करके पढ़ा जा सकता है। बहुतों के लिए यह सोचा-समझा निर्णय है, और इसे स्पष्ट कहा जाना चाहिए।',
 
-  flag_caa_missing: 'कोई CAA अभिलेख नहीं',
+  flag_caa_missing: 'कोई CAA रिकॉर्ड नहीं',
   fd_caa_missing: 'कुछ भी सीमित नहीं करता कि इस डोमेन के लिए कौन-सा प्रमाणपत्र प्राधिकरण जारी कर सकता है। CA/Browser की बुनियादी अपेक्षाओं वाले सभी प्राधिकरणों को 2017 से CAA मानना अनिवार्य है, यानी यह एक मुफ़्त प्रतिबंध है जिसका बस उपयोग नहीं हो रहा।',
 
   flag_caa_forbids_issuance: 'CAA हर तरह के जारीकरण पर रोक लगाता है',
-  fd_caa_forbids_issuance: 'अभिलेख में अकेला अर्धविराम है: इस नाम के लिए कोई भी प्राधिकरण जारी नहीं कर सकता। जिस डोमेन को कभी प्रमाणपत्र नहीं चाहिए उसके लिए सोचा-समझा, और जिसे चाहिए उसके लिए महँगी टाइपिंग गलती।',
+  fd_caa_forbids_issuance: 'रिकॉर्ड में अकेला अर्धविराम है: इस नाम के लिए कोई भी प्राधिकरण जारी नहीं कर सकता। जिस डोमेन को कभी प्रमाणपत्र नहीं चाहिए उसके लिए सोचा-समझा, और जिसे चाहिए उसके लिए महँगी टाइपिंग गलती।',
 
   flag_caa_no_iodef: 'CAA में सूचना का पता नहीं',
-  fd_caa_no_iodef: 'iodef गुण के बिना, जो प्राधिकरण आपके CAA अभिलेख के कारण अनुरोध ठुकराता है उसके पास आपको बताने की कोई जगह नहीं — ठीक उसी क्षण जब आप जानना चाहेंगे।',
+  fd_caa_no_iodef: 'iodef गुण के बिना, जो प्राधिकरण आपके CAA रिकॉर्ड के कारण अनुरोध ठुकराता है उसके पास आपको बताने की कोई जगह नहीं — ठीक उसी क्षण जब आप जानना चाहेंगे।',
 
   flag_caa_no_issuewild: 'वाइल्डकार्ड के लिए अलग नियम नहीं',
   fd_caa_no_issuewild: 'issuewild न हो तो issue समूह वाइल्डकार्ड प्रमाणपत्रों को भी नियंत्रित करता है। अक्सर यही अभिप्रेत होता है; कहा इसलिए जा रहा है कि मान न लिया जाए।',
 
   flag_caa_unknown_tag: 'एक अपरिचित CAA गुण',
-  fd_caa_unknown_tag: 'अभिलेख में मानक समूह से बाहर का टैग है। प्राधिकरण उसे अनदेखा कर देंगे।',
+  fd_caa_unknown_tag: 'रिकॉर्ड में मानक समूह से बाहर का टैग है। प्राधिकरण उसे अनदेखा कर देंगे।',
 
   flag_caa_unknown_critical_tag: 'एक अपरिचित CAA गुण महत्वपूर्ण चिह्नित है',
   fd_caa_unknown_critical_tag: 'जिस टैग को हम नहीं पहचानते उस पर critical चिह्न लगा है। जो प्राधिकरण उसे भी नहीं पहचानता, उसे जारीकरण पूरी तरह ठुकराना अनिवार्य है — इससे बिना किसी दिखने वाले कारण के प्रमाणपत्र रुक सकते हैं।',
@@ -3570,7 +3570,7 @@ OWN.hi = {
   fd_no_resolver_answered: 'छह सार्वजनिक रिज़ॉल्वरों में से किसी ने भी इस नाम के लिए उत्तर नहीं लौटाया। या तो ज़ोन पहुँच से बाहर है, या उन तक हमारा अपना बाहर जाने वाला रास्ता।',
 
   flag_resolvers_disagree: 'सार्वजनिक रिज़ॉल्वर अलग-अलग उत्तर देते हैं',
-  fd_resolvers_disagree: 'इस समय दो या अधिक रिज़ॉल्वरों के पास अलग-अलग अभिलेख हैं। किसी बदलाव के बाद कुछ घंटों तक यह सामान्य है — हर कैश अपना TTL पूरा करता है — और यदि यहाँ दिखाए गए सबसे लंबे TTL से आगे भी बना रहे तो यह समस्या है।',
+  fd_resolvers_disagree: 'इस समय दो या अधिक रिज़ॉल्वरों के पास अलग-अलग रिकॉर्ड हैं। किसी बदलाव के बाद कुछ घंटों तक यह सामान्य है — हर कैश अपना TTL पूरा करता है — और यदि यहाँ दिखाए गए सबसे लंबे TTL से आगे भी बना रहे तो यह समस्या है।',
 
   flag_some_resolvers_silent: 'कुछ सार्वजनिक रिज़ॉल्वरों ने उत्तर नहीं दिया',
   fd_some_resolvers_silent: 'कम से कम एक रिज़ॉल्वर ने समय पर उत्तर नहीं दिया। प्रायः यह उसका अपना बोझ या छना हुआ रास्ता होता है; अनदेखा करने के बजाय दर्ज किया जाता है ताकि चुप्पी से कुछ निष्कर्ष न निकाला जाए।',
